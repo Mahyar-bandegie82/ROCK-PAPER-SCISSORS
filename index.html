@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>rps</title>
+</head>
+
+<body>
+    <p class="intro">WELLCOME TO <br> <strong>ROCK PAPERS SCISSOR GAME</strong></p>
+    <div class="game">
+        <section class="display">
+            <div class="user">
+                <span>user move:</span>
+                <div class="usermove"></div>
+            </div>
+            <p class="vs">vs</p>
+            <div class="computer">
+                <span>computers move:</span>
+                <div class="computer_move"></div>
+            </div>
+        </section>
+        <p class="middle-p">your status: <span class="stat"></span></p>
+        <section class="controls">
+            <button onclick="control('rock')">rock</button>
+            <button onclick="control('paper')">paper</button>
+            <button onclick="control('scissors')">scissors</button>
+
+        </section>
+        <section class="status">
+            <p>matchs won: <span class="won">0</span></p>
+            <p>matchs lost: <span class="lost">0</span></p>
+            <p>matchs tied: <span class="tie">0</span></p>
+        </section>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
