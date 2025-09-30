@@ -13,14 +13,14 @@ function control(value) {
     let user_picture = document.querySelector('.usermove')
     let computer_picture = document.querySelector('.computer_move')
 
-    if (value === 'rock') { user_picture.style.backgroundImage = 'url(../assets/rock.png)'; }
-    else if (value === 'paper') { user_picture.style.backgroundImage = 'url(../assets/paper.jpg)'; }
-    else { user_picture.style.backgroundImage = 'url(../assets/scissor.jpg)'; }
+    if (value === 'rock') { user_picture.style.backgroundImage = 'url(assets/rock.png)'; }
+    else if (value === 'paper') { user_picture.style.backgroundImage = 'url(assets/paper.jpg)'; }
+    else { user_picture.style.backgroundImage = 'url(assets/scissor.jpg)'; }
 
     let computer_pick = getRandomInt(1, 4)
-    if (computer_pick === 1) { computer_picture.style.backgroundImage = 'url(../assets/rock.png)'; }
-    else if (computer_pick === 2) { computer_picture.style.backgroundImage = 'url(../assets/paper.jpg)'; }
-    else { computer_picture.style.backgroundImage = 'url(../assets/scissor.jpg)'; }
+    if (computer_pick === 1) { computer_picture.style.backgroundImage = 'url(assets/rock.png)'; }
+    else if (computer_pick === 2) { computer_picture.style.backgroundImage = 'url(assets/paper.jpg)'; }
+    else { computer_picture.style.backgroundImage = 'url(assets/scissor.jpg)'; }
 
     if(user_picture.style.backgroundImage === computer_picture.style.backgroundImage){
         let score = parseInt(tie.innerHTML)
